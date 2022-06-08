@@ -86,15 +86,20 @@ Python
 
 Formatting Integer Data  
 
-    "%d" ➔ 1 2 3                           -> sort by number of digits   
-    "%5d ➔ _ _ 1 2 3 (5 spaces secured)    -> Paste to the right to align   
+    "%d"   ➔ 1 2 3                         -> sort by number of digits   
+    "%5d   ➔ _ _ 1 2 3 (5 spaces secured)  -> Paste to the right to align   
     "%05d" ➔ 0 0 1 2 3 (5 spaces secured)  -> Paste to the right to align, fill in the blanks with zeros 
 
 Formatting real data
 
-    "%f" ➔ 1 2 3 . 4 5 0 0 0 0                -> Output to 6 decimal places
+    "%f"    ➔ 1 2 3 . 4 5 0 0 0 0             -> Output to 6 decimal places
     "%7.1f" ➔ _ _ 1 2 3 . 5 (Secure 7 spaces) -> Output only one decimal place, round to two decimal places
     "%7.3f" ➔ 1 2 3 . 4 5 0 (Secure 7 spaces) -> Print to the third decimal place, fill in the blanks to the right with zeros
 
 > The second %7.1f means that it will reserve seven digits, including the decimal point, and occupy only one place after the decimal point.
+
+Format string data
+
+    "%s"   ➔ P y t h o n                            -> output as many digits
+    "%10s" ➔ _ _ _ _ P y t h o n (Secure 10 spaces) -> right align
 

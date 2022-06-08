@@ -23,7 +23,7 @@ Hello
 200
 ```
 
-The number of formats must be equal to the number of digits (or characters) after %
+※ The number of formats must be equal to the number of digits (or characters) after %
 ```python
 print("%d" % (100, 200))
 print("%d %d" % 100)

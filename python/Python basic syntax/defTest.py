@@ -8,7 +8,7 @@ result = add(5, 7, 11)
 print(result)
 
 result = add(1, 3, 4)
-print("{}\n".format(result))
+print(result, '\n')
 
 
 def subtract(x, y):
@@ -18,7 +18,7 @@ result1 = subtract(20, 10)
 print(result1)
 
 result1 = subtract(35, 22)
-print("{}\n".format(result1))
+print(result1, '\n')
 
 
 def multiply(x, y, w, z):
@@ -28,7 +28,7 @@ result2 = multiply(2, 3, 4, 5)
 print(result2)
 
 result2 = multiply(10, 20, 30, 40)
-print("{}\n".format(result2))
+print(result2, '\n')
 
 # upper case
 a = "Good morning, man"
@@ -37,17 +37,17 @@ count = a.count('m')
 change = a.swapcase()   # change upper to lower, lower to upper
 print(upper)
 print(count)
-print(change + '\n')
+print(change, '\n')
 
 # lower case
 b = "GOOD MORNING MAN"
 lower = b.lower()
-print(b + '\n')
+print(b, '\n')
 
 # replace
 c = "Life is too short"
 replace = c.replace("Life", "Your height")
-print(replace + '\n')
+print(replace, '\n')
 
 # split
 d = "I regret what I did to you"

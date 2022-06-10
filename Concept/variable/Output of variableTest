@@ -1,0 +1,24 @@
+The type( ) function
+<class 'int'> ,  <class 'bool'> ,  <class 'float'> ,  <class 'str'>
+
+How to put a value in a variable
+False 100 123.45 Hello 
+
+Putting the value of a variable into a variable
+var1:  200
+var2:  200
+
+Put the calculation result into a variable
+var3:  200
+
+Putting calculations of variables and numbers into variables
+var4:  300 
+
+How to substitute consecutive values
+var5:  100
+var6:  100
+var7:  100
+var8:  100
+
+A method of substituting calculation results into own values
+var1:  200

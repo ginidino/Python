@@ -1,0 +1,37 @@
+How to use the print( ) function
+Hello
+100
+100
+100 + 100
+200
+
+100 / 200 = 0.5 
+
+123
+  123
+00123 
+
+123.450000
+  123.5
+123.450 
+
+Python
+    Python 
+
+Using the format( ) function
+123   123 00123
+123   123 00123
+
+various escape characters
+one line. and one line.
+one line. 
+and one line 
+
+
+practice 
+changing the lines
+	practice 	Tab key
+"The effect of" highlighting letters1
+'The effect of' highlighting letters2
+\\\ print 3 backslash
+print \n \t \" \\ as it is

@@ -1,4 +1,5 @@
 # How to use the print( ) function
+print('How to use the print( ) function')
 print("Hello")  # Hello
 print("100")    # 100(String)
 print("%d" % 100)   # 100(number)
@@ -21,11 +22,13 @@ print("%s" % 'Python')
 print("%10s" % 'Python', '\n')
 
 # Using the format( ) function
+print('Using the format( ) function')
 print("%d %5d %05d" % (123, 123, 123))
 print("{0:d} {1:5d} {2:05d}".format(123, 123, 123))
 print()
 
 # various escape characters
+print('various escape characters')
 print('one line. and one line.')
 print('one line. \nand one line', '\n')
 

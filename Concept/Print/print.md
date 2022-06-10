@@ -98,8 +98,63 @@ Formatting real data
 
 > The second %7.1f means that it will reserve seven digits, including the decimal point, and occupy only one place after the decimal point.
 
-Format string data
+Formatting string data
 
     "%s"   ➔ P y t h o n                            -> output as many digits
     "%10s" ➔ _ _ _ _ P y t h o n (Secure 10 spaces) -> right align
 
+### Using the format( ) function
+```py
+print("%d %5d %05d" % (123, 123, 123))
+print("{0:d} {1:5d} {2:05d}".format(123, 123, 123))
+```
+```
+123   123 00123
+123   123 00123
+```
+
+    ➔ Both rows output the same result.
+      In the second line, 0, 1, and 2 in { } correspond to the 0, 1, and 2 values in format( ). 
+      Remove % from %d and display as d.
+      
+### various escape characters
+- The print( ) statement passes one line after printing the contents
+
+```py
+print('one line. and one line.')
+print('one line. \nand one line')
+```
+```
+one line. and one line.
+one line. 
+and one line
+```
+
+escape characters
+|Escape Characters|Role|Explanation|
+|-----|-----|-----|
+|\n|move to new line|The effect of pressing the Enter key|
+|\t|go to next tab|The effext of pressing the Tab key|
+|\b|Move one space back|The effect of pressing the Backspace key|
+|\\\ |print \\ ||
+|\\'|print '||
+|\\"|print "||
+
+Using Escape Characters
+```py
+print('\npractice \nchanging the lines')
+print('\tpractice \tTab key')
+print("\"The effect of\" highlighting letters1")
+print("\'The effect of\' highlighting letters2")
+print('\\\\\\ print 3 backslash')
+print(r"print \n \t \" \\ as it is")
+```
+```
+practice 
+changing the lines
+	practice 	Tab key
+"The effect of" highlighting letters1
+'The effect of' highlighting letters2
+\\\ print 3 backslash
+print \n \t \" \\ as it is
+```

@@ -51,3 +51,68 @@ num1 + num2 - num3 =  1
 num1 + num2 * num3 =  14
 num1 * num2 / num3 =  1.5
 ```
+
+### Interconversion of strings and numbers
+- String is converted to integer by int() function and real number by float() function
+```py
+s1 = "100"
+s2 = "100.12"
+s3 = "999999999999"
+int1 = int(s1)
+fl = float(s2)
+int2 = int(s3)
+print(int1 + 1,', ', fl + 1,', ', int2 + 1)
+```
+```
+101 ,  101.12 ,  1000000000000
+```
+- To convert a number to a string, use the str() function
+```py
+a = 100
+b = 100.123
+str1 = str(a)
+str2 = str(b)
+print(str1 + '1', ', ', str2 + '1')
+```
+```
+1001 ,  100.1231
+```
+
+### Types of assignment operators
+|assignment operators|Usage Example|Example Description|
+|---|---|---|
+|+=|a += 3|Equal to a = a + 3|
+|-=|a -= 3|Equal to a = a - 3|
+|*=|a *= 3|Equal to a = a * 3|
+|/=|a /= 3|Equal to a = a / 3|
+|//=|a //= 3|Equal to a = a // 3|
+|%=|a %= 3|Equal to a = a % 3|
+|**=|a **= 3|Equal to a = a ** 3|
+
+- a starts at 10 and accumulates as the program progresses
+```py
+a = 10
+a += 5
+print(a)
+a -= 5
+print(a)
+a *= 5
+print(a)
+a /= 5
+print(a)
+a //= 5
+print(a)
+a %= 5
+print(a)
+a **= 5
+print(a)
+```
+```
+15
+10
+50
+10.0
+2.0
+2.0
+32.0
+```

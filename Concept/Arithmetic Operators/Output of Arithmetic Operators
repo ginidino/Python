@@ -1,0 +1,28 @@
+add:  8
+subtract: 2
+multiply:  15
+division:  1.6666666666666667
+Divide (share):  1
+Remainder:  2
+squared:  125
+
+Calculation order
+num1 + num2 - num3 =  1
+num1 + num2 * num3 =  14
+num1 * num2 / num3 =  1.5
+
+Interconversion of strings and numbers
+String -> int, float
+101 ,  101.12 ,  1000000000000
+
+int, float -> String
+1001 ,  100.1231
+
+"a" starts at 10 and accumulates as the program progresses
+15
+10
+50
+10.0
+2.0
+2.0
+32.0

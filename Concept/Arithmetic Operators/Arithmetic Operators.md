@@ -8,7 +8,7 @@
 |-| subtract|a - bSubtract 5 and 3 and substitute in a|
 |*| multiply |a * b|Substitute the value multiplied by 5 and 3 into a|
 |/| division |a / b|Substitute 5 divided by 3 into a|
-|//|Divide (share)|a // b|Divide 5 by 3 and substitute the share of the division into a|
+|//|Divide (quotient)|a // b|Divide 5 by 3 and substitute the quotient of the division into a|
 |%|Remainder|a % b|Divide 5 by 3 and substitute the remainder into a|
 |**|squared(power)|a ** b|Substitute 5 to the 3rd power of a|
 
@@ -20,7 +20,7 @@ print('add: ', a + b)
 print('subtract:', a - b)
 print('multiply: ', a * b)
 print('division: ', a / b)
-print('Divide (share): ', a // b)
+print('Divide (quotient): ', a // b)
 print('Remainder: ', a % b)
 print('squared: ', a ** b)
 ```
@@ -29,7 +29,7 @@ add:  8
 subtract: 2
 multiply:  15
 division:  1.6666666666666667
-Divide (share):  1
+Divide (quotient):  1
 Remainder:  2
 squared:  125
 ```

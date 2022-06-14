@@ -1,0 +1,11 @@
+alcohol purchase age
+Enter your age: 25
+Whether alcohol is available for purchase: True
+
+multiple of 3
+Enter an integer: 27
+Is it a multiple of 3?: True
+
+check the word, "university"
+Enter the university: university
+True

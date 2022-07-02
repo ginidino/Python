@@ -1,4 +1,4 @@
-# function
+# Function
 
 ## concept of function
 

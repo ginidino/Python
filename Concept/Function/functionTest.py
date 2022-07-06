@@ -77,3 +77,113 @@ num2 = int(input('Enter the second number: '))
 result = calculate(num1, num2, mark)
 
 print('calculator: %d %s %d = %d' % (num1, mark, num2, result))
+print()
+
+def func1():
+    a = 10
+    print('value of a in func1() : %d' % a)
+
+def func2():
+    print('value of a in func1() : %d' % a)
+
+a = 20   # a is global variable
+func1()
+func2()
+print()
+
+def function1():
+    result = 100
+    return result
+
+def function2():
+    print('Executing a function with no return value')
+
+sum = 0
+sum = function1()
+print('The value returned by function1(): %d' % sum)
+function2()
+print()
+
+# How to set the number of parameters
+print('How to set the number of parameters')
+def para2_func(num1, num2):
+    result = num1 + num2
+    return  result
+
+def para3_func(num1, num2, num3):
+    result = num1 + num2 + num3
+    return result
+
+sum = 0
+sum = para2_func(10, 20)
+print('Result of function call with 2 parameters: %d' % sum)
+
+sum = para3_func(10, 20, 30)
+print('Result of function call with 2 parameters: %d' % sum)
+print()
+
+# How to set default values for parameters
+print('How to set default values for parameters')
+def para_func(num1, num2, num3 = 0):
+    result = num1 + num2 + num3
+    return result
+
+sum = 0
+sum = para_func(10, 20)
+print('Result of function call with 2 parameters: %d' % sum)
+
+sum = para_func(10, 20, 30)
+print('Result of function call with 2 parameters: %d' % sum)
+print()
+
+# A method of not specifying the number of parameters - Arbitrary Argument List method
+print('Arbitrary Argument List method')
+def para_function(*para):
+    result = 0
+    for num in para:
+        result += num
+
+    return result
+
+sum = 0
+sum = para_function(10, 20)
+print('Result of function call with 2 parameters: %d' % sum)
+
+sum = para_function(10, 20, 30)
+print('Result of function call with 2 parameters: %d' % sum)
+print()
+
+#dictionary format
+print('dictionary format')
+def dic_func(**para):
+    for i in para.keys():
+        print('%s --> %d people' % (i, para[i]))
+
+dic_func(bigbang = 4, blackpink = 4, IDLE = 5, WJSN = 10)
+print()
+
+# lottery number draw program
+import random
+
+print('lottery number draw program')
+
+def getNum():
+    return random.randrange(1, 46)
+
+lotto = []
+
+print('**** Lotto draw begins **** \n')
+
+while True:
+    num = getNum()
+
+    if lotto.count(num) == 0:
+        lotto.append(num)
+
+    if len(lotto) >= 6:
+        break
+
+print('lottery numbers drawn: ', end=' ')
+lotto.sort()
+for i in range(0, 6):
+    print("%d " % lotto[i], end='')

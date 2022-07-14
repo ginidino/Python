@@ -228,3 +228,56 @@ inF.close()
 outF.close()
 print('The file was copied normally.')
 ```
+
+## Complete file encryption and decryption programs
+- ord() function: returns the unique number of a character
+- chr() function returns the character corresponding to a number
+```py
+ord('a')
+chr(97)
+```
+```
+97
+a
+```
+- Add 100 to the number in 'a' to encrypt
+```py
+num = ord('a')
+chr(num + 100)
+```
+```
+Å
+```
+```py
+security = input('choose from 1. Encryption 2. Password Interpretation: ')
+infileName = input('Enter the input file name: ')
+outfileName = input('Enter the output file name: ')
+
+if security == '1':
+    secu = 100
+elif security == '2':
+    secu = -100
+
+inFile = open(infileName, "r", encoding="utf-8")
+outFile = open(infileName, "w", encoding="utf-8")
+
+while True:
+    inString = inFile.readline()
+    if not inString:
+        break
+
+    outString = ""
+    for i in range(0, len(inString)):
+        char = inString[i]
+        charNum = ord(char)
+        charNum += secu
+        char2 = chr(charNum)
+        outString += char2
+
+    outFile.write(outString)
+
+outFile.close()
+inFile.close()
+print(' %s ---> %s Conversion complete' % (infileName, outfileName))
+```
+

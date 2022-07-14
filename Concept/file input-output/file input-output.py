@@ -87,3 +87,50 @@ for inCont in inLists:
 inF.close()
 outF.close()
 print('The file was copied normally.')
+print()
+
+ord('a')
+chr(97)
+print(ord('a'))
+print(chr(97))
+print()
+
+num = ord('a')
+chr(num + 100)
+print(chr(num + 100))
+print()
+
+infileName = None
+outfileName = None
+i = 0
+
+security = input('choose from 1. Encryption 2. Password Interpretation: ')
+infileName = input('Enter the input file name: ')
+outfileName = input('Enter the output file name: ')
+
+if security == "1":
+    secu = 100
+elif security == "2":
+    secu = -100
+
+inFile = open(infileName, "r", encoding="utf-8")
+outFile = open(infileName, "w", encoding="utf-8")
+
+while True:
+    inString = inFile.readline()
+    if not inString:
+        break
+
+    outString = ""
+    for i in range(0, len(inString)):
+        char = inString[i]
+        charNum = ord(char)
+        charNum += secu
+        char2 = chr(charNum)
+        outString += char2
+
+    outFile.write(outString)
+
+outFile.close()
+inFile.close()
+print(' %s ---> %s Conversion complete' % (infileName, outfileName))

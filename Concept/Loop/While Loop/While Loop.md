@@ -1,8 +1,9 @@
 # While Loop
 ## Comparison of for loop and while loop
-- for loop 
-
-      for variable in rainge(start value, end value + 1, increment value)
+### for loop 
+```
+for variable in rainge(start value, end value + 1, increment value)
+```
 ```py
 for i in range(0, 3, 1):
     print('%d : This is for loop' % i)
@@ -13,13 +14,13 @@ for i in range(0, 3, 1):
 2 : This is for loop
 ```
 
-- while loop 
-
-      variable = start value
-      while variable value < end value
-        repeat this part
-        variable = variable + increment value
-
+### while loop 
+```
+variable = start value
+while variable value < end value
+ repeat this part
+ variable = variable + increment value
+```
 ```py
 i = 0
 while i < 3:
